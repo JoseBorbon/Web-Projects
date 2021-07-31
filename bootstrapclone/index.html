@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src='//kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+	<title>CodeSmith Project 1</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'>
+
+	</script>
+	<!-- <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+	<link href='https://css.gg/open-collective.css' rel='stylesheet'>
+	<input type="checkbox" id="checkbox" onclick="expandContract()">
+    <nav>
+      <ul class="container">
+        
+        <a id="spacer2"></a>
+        <a class="item bootslogo" id="bootslogo" href="https://getbootstrap.com/"><img id="bootslogo" 
+      src="https://lh3.googleusercontent.com/pw/ACtC-3eqISpBDcvdVucoCCavUPrlVuAEJ2cRpUTwkexjhyleNzUyQF0TGXnIj0AQRoTKu0K5hbobWg3DEJqoa3CL7k3xo6i0tmFVLLoZeobnHPjXgo1DA_sJWgrqI77I1HCjsQxBWa_TUt91MDgmcwQ_pU-bYQ=w277-h222-no?authuser=0
+      "
+      height="35"
+    /></a>
+        <a class="item leftitem" href="https://getbootstrap.com/">Home</a>
+        <a class="item leftitem" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Docs</a>
+        <a class="item leftitem" href="https://getbootstrap.com/docs/5.0/examples/">Examples</a>
+        <a class="item leftitem" href="https://icons.getbootstrap.com/">Icons</a>
+        <a class="item leftitem" href="https://themes.getbootstrap.com/">Themes</a>
+        <a class="item leftitem" href="https://blog.getbootstrap.com/">Blog</a>
+        
+        <a id="spacer"></a>
+        
+        <a class="item" href="https://github.com/twbs"><i id="gitlogo" class='fab fa-github'></i></a>
+        
+        <a class="item" href="https://twitter.com/getbootstrap"><i id="twitlogo" class='fab fa-twitter'></i></a>
+        
+        <a class="item" href="https://bootstrap-slack.herokuapp.com/"><i id="slacklogo" class='fab fa-slack-hash'></i></a>
+      
+        <a class="item" href="https://opencollective.com/bootstrap"><i id="oclogo" class="gg-open-collective"></i></a>
+       
+          <a class="cta item leftitem" href="https://getbootstrap.com/docs/5.0/getting-started/download/"><button id ="topRightDownload">Download</button></a>
+        <label id="menuIcon" for="checkbox">
+          <span  class="fa-stack fa-lg">
+            <i id="square" class="far fa-square fa-stack-2x"></i>
+            <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+          </span>
+        </label>
+        <a id="spacer3"></a>
+      </ul>
+    </nav>
+      <!-- new stuff -->
+    <nav>
+      <ul id="container2" class="container2">
+        <ul class="column1">
+        <a class="toggle-item" href="https://getbootstrap.com/">Home</a>
+        
+        
+        <a class="toggle-item" href="https://getbootstrap.com/docs/5.0/examples/">Examples</a>
+        
+        <a class="toggle-item" href="https://themes.getbootstrap.com/">Themes</a>
+        <a class="toggle-item"><i class='fab fa-github toggle-item'></i>Github</a>
+        <a class="toggle-item"><i class='fab fa-slack-hash toggle-item'></i>Slack</a>
+        <a class="cta toggle-item" href="https://getbootstrap.com/docs/5.0/getting-started/download/"><button id ="toggleTopRightDownload">Download</button></a>
+        </ul>
+        
+        <ul class="column2">
+          <a class="toggle-item" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Docs</a>
+          <a class="toggle-item" href="https://icons.getbootstrap.com/">Icons</a>
+          <a class="toggle-item" href="https://blog.getbootstrap.com/">Blog</a>
+          <a class="toggle-item"><i class='fab fa-twitter toggle-item'></i>Twitter</a>
+        
+        
+       
+         
+          <!-- <i id="oclogo2" class="gg-open-collective toggle-item">Open Collective</i> -->
+          <!-- <a class="toggle-item"><svg><use xlink:href="/all.svg#gg-open-collective"/></svg> Open Collective</a> -->
+          <a class="toggle-item"><svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.6818 15.7529L18.8116 17.8827C20.1752 16.3052 21 14.249 21 12.0001C21 9.78747 20.2016 7.76133 18.8771 6.19409L16.7444 8.32671C17.5315 9.34177 18 10.6162 18 12.0001C18 13.4203 17.5066 14.7253 16.6818 15.7529Z"
+              fill="currentColor"
+              fill-opacity="0.5"
+            />
+            <path
+              d="M15.6734 16.7445C14.6583 17.5315 13.3839 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C13.4202 6 14.7252 6.49344 15.7528 7.31823L17.8826 5.18843C16.3051 3.82482 14.2489 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C14.2126 21 16.2387 20.2016 17.806 18.8771L15.6734 16.7445Z"
+              fill="currentColor"
+            />
+          </svg>Open Collective</a>
+          
+        </ul>
+      </ul>
+    </nav>
+    
+  </head>
+
+  <body>
+   
+
+  
+
+
+   
+
+
+ 
+      
+        <div id="showcaseContainer">
+            <br>
+          
+          <div class="showcase">
+          
+            <h1 class="showcaseHeader">
+              Build fast, responsive sites with Bootstrap
+            </h1>
+            <h3 class="showcaseSub">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system, extensive
+              prebuilt components, and powerful JavaScript plugins.
+            </h3>
+
+            <button type="button" id="getStarted" class="buttons">
+              Get Started
+            </button>
+            <button type="button" id="download" class="buttons">Download</button>
+
+            <p class="showcasesubText">
+              Currently <b>v5.0.1</b> ·
+              <a
+                href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+                >v4.6.x docs</a>
+              .
+              <a href="https://getbootstrap.com/docs/versions/">All Releases</a>
+            </p>
+            <a href="https://ElectricThreadbareLinks.ericaskew.repl.co">
+              <img
+                src="https://lh3.googleusercontent.com/pw/ACtC-3cV5jXf0sapYeH9gCjFAFrTYe0hzjQl-lwtGqx5dEjaCfxDy2DUWc716JjX9Hx9eBtKYOxoMZ1JZu6AzN6MmEXfDjoujV6zrKMfM0AVVI8L48BPRpMYD01_ullgd0XEvZbBwMucEU3oJe-8q9Et_nfYhw=w1401-h642-no?authuser=0"
+                height="200"
+                width="400"
+              />
+           
+          </div>
+        </div>
+    
+        <div id="leftRightMain">
+          <div id="leftMainContainer">
+            <div class="leftSideMain">
+              <img
+                class="Icon"
+                src="https://lh3.googleusercontent.com/pw/ACtC-3eQJi5gryozLIK7naqSRJHVpC7TBWkTbWZ-_5BNlY64sZYGCRrzCx15pVluFBUsgP4WCrq6sXGROh49VfCT-yA21FSkNz4sJ6NNdR6vXJm7tN0PxJo935i7j-UBeGFiQHPdBWHLTg1OLJkrbwUsEWzBBg=w340-h343-no?authuser=0"
+                height="60"
+                width="60"
+              />
+              <h2 class="Header">Installation</h2>
+              <h3 class="sub-header">
+                Install Bootstrap’s source Sass and JavaScript files via npm,
+                Composer, or Meteor.
+              </h3>
+              <p class="subText">
+                Package managed installs don’t include documentation or our full
+                build scripts. You can also
+                <a href="https://github.com/twbs/bootstrap-npm-starter"
+                  >use our npm template repo</a
+                >
+                to quickly generate a Bootstrap project via npm.
+              </p>
+
+              <button type="button" class="buttons">Read installation docs</button>
+            </div>
+            <div class="leftSideMain">
+              <img
+                class="Icon"
+                src="https://lh3.googleusercontent.com/pw/ACtC-3dTlu9XhOc_AurpTvR57S4QXcW4e354nQq3d2e1ltbbQS_r7CysCtXCGYMt-CfbPP7Gjb3HjTrQwOfv1kLhqBtd-2YejM0PjRc-qRAx6YGGOOj5iiBiDgMwcTzfJyHLuJOq-p83wPv2mz8cuMzSkvaSdw=w340-h345-no?authuser=0"
+                height="60"
+                width="60"
+              />
+
+              <h2 class="Header">jsDelivr</h2>
+              <h3 class="sub-header">
+                When you only need to include Bootstrap’s compiled CSS or JS, you
+                can use
+                <a href="https://getbootstrap.com/">jsDelivr </a>
+              </h3>
+              <p class="subText">
+                See it in action with our simple
+                <a
+                  href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template"
+                  >starter template </a
+                >, or
+                <a href="https://getbootstrap.com/docs/5.0/examples/"
+                  >browse the examples</a
+                >
+                to jumpstart your next project. You can also choose to include
+                Popper and our JS
+                <a
+                  href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#separate"
+                  >separately </a
+                >.
+              </p>
+              <button type="button" class="buttons">Explore the docs</button>
+            </div>
+            <div class="leftSideMain">
+              <img
+                class="Icon"
+                src="https://lh3.googleusercontent.com/pw/ACtC-3ebv1FlN-OhQJ4jrzL-MvDmE2oBvriMXxuZh5D9PO7lxk3MPaE8VokvcCTuji2lmO9JwyjP6C8o5rgDwlZpqjTi79_XUPWrTiyhDfjxJ39EZm8u_R0WA9ctrl-XcLqE55OZbcEtkuNBiG4Y3kvbEVhkDA=w339-h343-no?authuser=0"
+                height="60"
+                width="60"
+              />
+
+              <h2 class="Header">Bootstrap Icons</h2>
+              <h3 class="sub-header">
+                For the first time ever, Bootstrap has its own open source SVG icon
+                library, designed to work best with our components and
+                documentation.
+              </h3>
+              <p class="subText">
+                Bootstrap Icons are designed to work best with Bootstrap components,
+                but they’ll work in any project. They’re SVGs, so they scale quickly
+                and easily, can be implemented in several ways, and can be styled
+                with CSS.
+              </p>
+
+              <button type="button" class="buttons">Get Boostrap Icons</button>
+            </div>
+            <div class="leftSideMain ">
+              <img
+                class="Icon"
+                src="https://lh3.googleusercontent.com/pw/ACtC-3fiJ_8PNhH5AO6p27sFY3VVPStApzDJT8moiyz0ooS2_T0Bu0EhiQyljuyQMFe2kkwwvlJJupE5fnJhsufMxuttbdPwWoR6hsmaCD3UFXfDrBC5ikSY-KLWBiwyfBQmtCwKt73v5_gkNDuSYK4HxpdqxQ=w340-h345-no?authuser=0"
+                height="60"
+                width="60"
+              />
+              <h2 class="Header">Official Themes</h2>
+              <h3 class="sub-Header">
+                Take Bootstrap to the next level with premium themes from the
+                <a href="https://themes.getbootstrap.com/"
+                  >official Bootstrap Themes marketplace.</a
+                >
+              </h3>
+              <p class="subText">
+                Themes are built on Bootstrap as their own extended frameworks, rich
+                with new components and plugins, documentation, and powerful build
+                tools.
+              </p>
+              <button type="button" class="buttons">Browse Themes</button>
+            </div>
+          </div>
+          <div id="rightMainContainer">
+            <div class="rightSideMain">
+              <p class="copybox">
+                $ npm install bootstrap
+                <button type="button" class="button" title="" data-bs-original-title="Copy to clipboard">Copy</button>
+              </p>
+              <br>
+              <p class="copybox">
+                $ gem install bootstrap -v 5.0.1
+                <button type="button" class="buttons">Copy</button>
+              </p>
+
+              <br>
+
+
+            </div>
+                <button type="button" class="buttons" title="" data-bs-original-title="Copy to clipboard">Copy</button>
+              </p>
+
+
+              <br>
+
+
+              <p class="copybox">
+                <!-- JavaScript Bundle with Popper -->
+                
+                <button type="button" class="buttons">Copy</button>
+              </p>
+
+              <br>
+
+
+              <img
+                src="https://getbootstrap.com/docs/5.0/assets/img/bootstrap-icons@2x.png"
+                heigth="400"
+                width="380"
+              />
+            </div>
+
+            <br>
+
+            
+            <div class="rightSideMain">
+              <img
+                src="https://getbootstrap.com/docs/5.0/assets/img/bootstrap-themes@2x.png"
+                heigth="400"
+                width="380"
+              />
+            </div>
+          </div>
+        </div>
+       </div>
+        <br> 
+
+
+        <div id="footerContainer">
+          <div class="footer">
+            <div class="footer-heading footer-0">
+              <h2>
+                <img
+                  id="bootslogo"
+                  class="item bootslogo"
+                  src="https://lh3.googleusercontent.com/pw/ACtC-3eqISpBDcvdVucoCCavUPrlVuAEJ2cRpUTwkexjhyleNzUyQF0TGXnIj0AQRoTKu0K5hbobWg3DEJqoa3CL7k3xo6i0tmFVLLoZeobnHPjXgo1DA_sJWgrqI77I1HCjsQxBWa_TUt91MDgmcwQ_pU-bYQ=w277-h222-no?authuser=0
+              "
+                  height="20"
+                />Bootstrap</h2>       
+                <ul class="headingbody">                     
+              
+                <li class"list1">
+                  Designed and built with all the love in the world by the
+                <a href="https://getbootstrap.com/docs/5.0/about/team/"
+                  >Bootstrap team</a
+                >
+                with the help of
+                <a href="https://github.com/twbs/bootstrap/graphs/contributors"
+                  >our contributors.</li> 
+                  
+                 <li class"list1"> 
+                  Code licensed
+                <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE">MIT</a
+                >, docs
+                <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0. </li> 
+                
+                <li class="list1">Currently v5.0.1.</li>
+    
+                </ul>
+            </div>
+            <!-- <div class="footer"> -->
+            <div class="footer-heading footer-1">
+              <h2>Links</h2>
+              <a href="https://getbootstrap.com/">Home</a>
+              <a
+                href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                >Docs</a
+              >
+              <a href="https://getbootstrap.com/docs/5.0/examples/">Examples</a>
+              <a href="https://opencollective.com/bootstrap">Themes</a>
+              <a href="https://blog.getbootstrap.com/">Blog</a>
+            </div>
+            <div class="footer-heading footer-2">
+              <h2>Guides</h2>
+              <a
+                href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                >Getting Started</a
+              >
+              <a href="https://getbootstrap.com/docs/5.0/examples/starter-template/"
+                >Starter template</a
+              >
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/webpack/"
+                >Webpack</a
+              >
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/parcel/"
+                >Parcel</a
+              >
+            </div>
+            <div class="footer-heading footer-3">
+              <h2>Projects</h2>
+              <a href="https://github.com/twbs/bootstrap">Bootstrap 5</a>
+              <a href="https://github.com/twbs/bootstrap/tree/v4-dev"
+                >Bootstrap 4</a
+              >
+              <a href="https://github.com/twbs/icons">Icons</a>
+              <a href="https://github.com/twbs/rfs">RFS</a>
+              <a href="https://github.com/twbs/bootstrap-npm-starter"
+                >npm starter</a
+              >
+            </div>
+            <div class="footer-heading footer-4">
+              <h2>Community</h2>
+              <a href="https://github.com/twbs/bootstrap/issues">Issues</a>
+              <a href="https://github.com/twbs/bootstrap/discussions"
+                >Discussions</a
+              >
+              <a href="https://github.com/sponsors/twbs">Corporate sponsors</a>
+              <a href="ttps://opencollective.com/bootstrap">Open Collective</a>
+              <a href="https://bootstrap-slack.herokuapp.com/">Slack</a>
+              <a href="#https://stackoverflow.com/questions/tagged/bootstrap-5"
+                >Stack Overflow</a
+              >
+            </div>
+          </div>
+      
+     
+  <script src="script.js"></script>
+  </body>
+</html>
